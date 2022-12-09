@@ -1,0 +1,10 @@
+###GET points
+GET http://localhost:3000/1/points
+
+###POST receipts
+POST http://localhost:3000/receipts/process.json
+Content-Type: application/json
+
+{
+"retailer": "Target",
+}
