@@ -22,6 +22,7 @@ class ReceiptsController < ApplicationController
     if purchaseDate[-1].odd?
       points += 6
     end
-    if purchaseTime
+    if purchaseTime[0] == 1 && purchaseTime[1] > 4 && purchaseTime[1] < 16
+      points += 10
   end
 end
